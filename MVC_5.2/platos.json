@@ -1,0 +1,36 @@
+{
+    "plato":[
+    { 
+        "id":1,
+        "Nombre": "Carpaccio de salmon",
+        "Descripcion":"fideos",
+        "precio": 1000
+
+    },
+    { 
+        "id":2,
+        "Nombre": "esparragos",
+        "Descripcion":"fideos tipo esparragos",
+        "precio": 1200
+
+    },
+    { 
+        "id":3,
+        "Nombre": "mousse de arroz",
+        "Descripcion":"delicioso mousse de arroz con crema",
+        "precio": 1500
+
+    },
+    { 
+        "id":4,
+        "Nombre": "Risotto de berenjena",
+        "Descripcion":"risotto de berenjena con queso cabra",
+        "precio": 3000
+    
+    }
+    ]
+}
+
+
+
+
