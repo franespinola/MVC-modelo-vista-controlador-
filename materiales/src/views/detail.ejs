@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <!-- Include Head -->
-<%- include('partials/head', {title: '¿?'}) %>
+<%- include('partials/head', {title: 'Detalle: ' + productoEnDetalle.name}) %>
 <body>
 	<!-- Header -->
 	<%- include('partials/headerNavbar') %>
@@ -11,7 +11,7 @@
 	<div class="container products-wrapper">
 		<div class="row">
 			<div class="col-12">
-				<h2 class="products-title">Detalle del producto: NOMBRE DEL PRODUCTO</h2>
+				<h2 class="products-title">Detalle del producto:<%=productoEnDetalle.name %></h2>
 			</div>
 		</div>
 		<div class="product-detail">
@@ -50,8 +50,8 @@
 						<a href="#" class="buy-now-button">COMPRAR AHORA</a>
 						<hr>
 
-						<a href="/products/edit/" class="action-button edit">EDITAR PRODUCTO</a>
-						<form action="/products/delete/" method="POST" style="display: inline-flex">
+						<a href="/products/edit/<%= productoEnDetalle.id %>" class="action-button edit">EDITAR PRODUCTO</a>
+						<form action="/products/<%=productoEnDetalle.id%>?_method=DELETE" method="POST" style="display: inline-flex" onsubmit="return confirm('Esta seguro que desea eliminarlo?');">
 							<button type="submit" class="action-button delete">ELIMINAR</button>
 						</form>
 					</article>
